@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeeta Reddi | Senior Full-Stack Engineer & Architect</title>
+    <meta name="description" content="Portfolio of Sangeeta Reddi, a Senior Full-Stack Engineer specializing in building scalable web applications, cloud architecture, and AI integrations. Explore my projects, skills, and experience.">
+    <meta name="keywords" content="Sangeeta Reddi, Full-Stack Developer, Software Engineer, Web Portfolio, React, Node.js, Python, AWS, Developer Portfolio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sangeetareddi.dev/">
+    <meta property="og:title" content="Sangeeta Reddi | Senior Full-Stack Engineer & Architect">
+    <meta property="og:description" content="Portfolio of Sangeeta Reddi, a Senior Full-Stack Engineer specializing in React, Node.js, Python, and cloud infrastructure.">
+    <meta property="og:image" content="assets/avatar.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Sangeeta Reddi | Senior Full-Stack Engineer & Architect">
+    <meta property="twitter:description" content="Portfolio of Sangeeta Reddi, a Senior Full-Stack Engineer specializing in React, Node.js, Python, and cloud infrastructure.">
+    <meta property="twitter:image" content="assets/avatar.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+    <!-- Custom Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Glowing Background Elements -->
+    <div class="blob-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="header-logo">
+                <span class="logo-accent">&lt;</span>Sangeeta<span class="logo-accent">.Reddi /&gt;</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" aria-label="Desktop navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Switcher -->
+                <button id="theme-toggle" class="btn-theme-toggle" aria-label="Switch Theme" title="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Navigation Toggle -->
+                <button id="mobile-nav-toggle" class="btn-mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Available for new opportunities</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Sangeeta Reddi</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A Senior Full-Stack Engineer passionate about crafting high-performance, accessible, and pixel-perfect digital experiences. Specializing in modern web ecosystems, cloud architectures, and intelligence integrations.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                            Explore Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            Let's Talk <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-glow"></div>
+                            <div class="profile-border"></div>
+                            <img src="assets/avatar.png" alt="Sangeeta Reddi Professional Portrait" class="profile-image" id="profile-img">
+                        </div>
+                        <div class="tech-stack-floating">
+                            <div class="floating-icon icon-react" title="React"><i class="fa-brands fa-react"></i></div>
+                            <div class="floating-icon icon-node" title="NodeJS"><i class="fa-brands fa-node-js"></i></div>
+                            <div class="floating-icon icon-python" title="Python"><i class="fa-brands fa-python"></i></div>
+                            <div class="floating-icon icon-aws" title="AWS"><i class="fa-brands fa-aws"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator-wrapper" aria-label="Scroll to About Section">
+                <div class="scroll-indicator"></div>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section reveal-on-scroll">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Who I Am</h3>
+                        <p class="bio-paragraph">
+                            I am a software engineer with over 5 years of experience in architecting and writing production-grade applications. My journey started with a fascination for web technologies, which evolved into a full-scale obsession with performance optimization, cloud infrastructure, and modern system design.
+                        </p>
+                        <p class="bio-paragraph">
+                            I design systems that not only look incredible but are built on solid architectural pillars—ensuring scalability, strict accessibility compliance, and robust security. Whether I'm designing responsive, state-managed user interfaces or fine-tuning database schemas, I commit to delivering outstanding execution.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card" id="stat-experience">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-lbl">Years of Experience</span>
+                            </div>
+                            <div class="stat-card" id="stat-projects">
+                                <span class="stat-num">25+</span>
+                                <span class="stat-lbl">Completed Projects</span>
+                            </div>
+                            <div class="stat-card" id="stat-contributions">
+                                <span class="stat-num">500+</span>
+                                <span class="stat-lbl">Git Contributions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cards">
+                        <div class="info-card" id="card-design-focus">
+                            <i class="fa-solid fa-code icon-accent"></i>
+                            <h4>Clean Architectures</h4>
+                            <p>Focused on writing robust, testable, and maintainable code adhering to SOLID principles.</p>
+                        </div>
+                        <div class="info-card" id="card-performance-focus">
+                            <i class="fa-solid fa-gauge-high icon-accent"></i>
+                            <h4>Performance-First</h4>
+                            <p>Striving for 100 Lighthouse scores, fast load times, and buttery-smooth client experiences.</p>
+                        </div>
+                        <div class="info-card" id="card-cloud-focus">
+                            <i class="fa-solid fa-cloud icon-accent"></i>
+                            <h4>Cloud Integration</h4>
+                            <p>Deploying serverless systems and microservices designed for maximum uptime and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section reveal-on-scroll">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">My Tech Stack</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category-card" id="skills-frontend">
+                        <div class="category-header">
+                            <i class="fa-solid fa-desktop icon-category"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-chip">
+                                <span class="skill-name">React / Next.js</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">JavaScript (ES6+) / TypeScript</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 92%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">HTML5 / Semantic CSS3</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 98%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">CSS Grid / Flexbox / SASS</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & API Skills -->
+                    <div class="skill-category-card" id="skills-backend">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server icon-category"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-chip">
+                                <span class="skill-name">Node.js / Express</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">Python / Django / FastAPI</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">PostgreSQL / MySQL</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">MongoDB / Redis</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 82%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud, DevOps & Tools -->
+                    <div class="skill-category-card" id="skills-cloud">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cloud-arrow-up icon-category"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-chip">
+                                <span class="skill-name">AWS (EC2, Lambda, S3, RDS)</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">Docker & Containerization</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">CI/CD (GitHub Actions)</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 87%"></div></div>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="skill-name">Git / Version Control</span>
+                                <div class="skill-progress"><div class="progress-fill" style="width: 94%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section reveal-on-scroll">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content" id="exp-1">
+                            <span class="timeline-date">2024 - Present</span>
+                            <h3>Senior Full-Stack Engineer</h3>
+                            <span class="timeline-org">Apex Tech Solutions</span>
+                            <p>Led development of high-throughput web portals, cutting-edge user interfaces, and custom internal APIs. Managed team deployments with Docker on AWS, cutting operational overhead by 25%.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content" id="exp-2">
+                            <span class="timeline-date">2022 - 2024</span>
+                            <h3>Full-Stack Developer</h3>
+                            <span class="timeline-org">Innovate Digital Inc.</span>
+                            <p>Spearheaded migration of legacy services to React and Node.js microservices. Integrated advanced payment processing pipelines and improved client website SEO by restructuring document semantics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content" id="exp-3">
+                            <span class="timeline-date">2021 - 2022</span>
+                            <h3>Associate Developer</h3>
+                            <span class="timeline-org">ByteWave Systems</span>
+                            <p>Maintained scalable Node.js microservices and wrote highly optimized database operations. Implemented pixel-perfect responsive dashboards using Sass, CSS Grid, and custom animations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content" id="edu-1">
+                            <span class="timeline-date">2017 - 2021</span>
+                            <h3>B.Tech in Computer Science</h3>
+                            <span class="timeline-org">State University of Technology</span>
+                            <p>Graduated with Honors. Specialized in Software Engineering and Database Architectures. Led the Web Development Club and won second place at the National University Hackathon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section reveal-on-scroll">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Projects Filter Bar -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                    <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="cloud" id="filter-cloud">AI & Cloud</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="fullstack" id="project-card-1">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project1.png" alt="SaaS Analytics Dashboard Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Full-Stack</span>
+                            <h3 class="project-card-title">SaaS Metrics Dashboard</h3>
+                            <p class="project-desc">A real-time data analytical platform pulling metrics from Stripe, Google Analytics, and AWS. Includes detailed reporting and charting pipelines.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>ChartJS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="frontend" id="project-card-2">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project2.png" alt="Collaborative Mind Mapping Board Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 2" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Frontend</span>
+                            <h3 class="project-card-title">CoCanvas Board</h3>
+                            <p class="project-desc">A collaborative whiteboard application powered by Canvas and WebSockets, enabling teams to build mind maps and wireframes simultaneously.</p>
+                            <div class="project-tech">
+                                <span>HTML5 Canvas</span>
+                                <span>TypeScript</span>
+                                <span>Socket.io</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="cloud" id="project-card-3">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project3.png" alt="Distributed Cloud Log Pipeline Diagram Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">AI & Cloud</span>
+                            <h3 class="project-card-title">Nimbus Log Engine</h3>
+                            <p class="project-desc">A distributed serverless logging engine running on AWS Lambda and Amazon Kinesis. Efficiently parses, queries, and flags system anomalies in real time.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AWS Lambda</span>
+                                <span>Kinesis</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="fullstack" id="project-card-4">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project4.png" alt="Headless Commerce Checkout Page Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 4" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Full-Stack</span>
+                            <h3 class="project-card-title">Apex Headless E-Commerce</h3>
+                            <p class="project-desc">A production-grade e-commerce application using a decoupled stack. Features Stripe checkout, serverless inventory processing, and user auth.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>NestJS</span>
+                                <span>MongoDB</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="frontend" id="project-card-5">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project5.png" alt="Audio Visualizer Application Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 5" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Frontend</span>
+                            <h3 class="project-card-title">SonicFlow Visualizer</h3>
+                            <p class="project-desc">A web application leveraging the Web Audio API to create dynamic, responsive visual animations based on audio inputs or file uploads.</p>
+                            <div class="project-tech">
+                                <span>Web Audio API</span>
+                                <span>Three.js</span>
+                                <span>JavaScript</span>
+                                <span>CSS Variables</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="cloud" id="project-card-6">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-visuals/project6.png" alt="Machine Learning Semantic Search Interface Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-links">
+                                    <a href="#" class="project-link" aria-label="View live demo of Project 6" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" class="project-link" aria-label="View github repository of Project 6" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">AI & Cloud</span>
+                            <h3 class="project-card-title">Aegis AI Search</h3>
+                            <p class="project-desc">A semantic text search engine driven by LLM embeddings and pinecone vector indexing, performing lightning-fast contextual queries across manuals.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>OpenAI API</span>
+                                <span>Pinecone</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal-on-scroll">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-panel">
+                        <h3>Connect with Me</h3>
+                        <p class="contact-pitch">
+                            Have an interesting project, job opportunity, or just want to discuss modern systems design? Drop me a message, and I'll get back to you within 24 hours.
+                        </p>
+                        
+                        <div class="contact-detail-items">
+                            <div class="contact-item" id="contact-item-email">
+                                <div class="contact-item-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="label">Email</span>
+                                    <span class="value" id="email-address">sangeeta.reddi19@gmail.com</span>
+                                </div>
+                                <button class="btn-copy" id="btn-copy-email" aria-label="Copy email to clipboard" title="Copy Email">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="contact-item" id="contact-item-location">
+                                <div class="contact-item-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="label">Location</span>
+                                    <span class="value">San Francisco Bay Area, CA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/sangeetabadagi19-coder" class="social-btn" id="social-link-github" aria-label="Github Profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="social-btn" id="social-link-linkedin" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-btn" id="social-link-twitter" aria-label="Twitter Profile" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                                <span class="error-message" id="error-name">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+                                <span class="error-message" id="error-email">Please enter a valid email address</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" required rows="5" placeholder="Let's build something great..."></textarea>
+                                <span class="error-message" id="error-message">Message cannot be empty (min 10 characters)</span>
+                            </div>
+
+                            <button type="submit" id="contact-submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <!-- Form Success/Error notifications -->
+                            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Sangeeta Reddi. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>Designed and crafted with <i class="fa-solid fa-heart footer-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Javascript Controller -->
+    <script src="script.js"></script>
+</body>
+</html>
